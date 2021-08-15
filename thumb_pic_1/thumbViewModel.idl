@@ -1,0 +1,13 @@
+namespace thumb_pic_1
+{
+    [Windows.UI.Xaml.Data.Bindable]
+    runtimeclass thumbViewModel 
+    {
+        thumbViewModel();
+        thumbViewModel(Windows.Storage.StorageFile imagefile, Windows.UI.Xaml.Media.Imaging.BitmapImage thunbimage, String imagename);
+
+        Windows.Storage.StorageFile GetImageFile{ get; };
+        Windows.UI.Xaml.Media.Imaging.BitmapImage GetThumbImage{ get; };
+        String GetImageName{ get; };
+    }
+}
